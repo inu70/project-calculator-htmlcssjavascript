@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="calculator">
+		<div class="layar">
+			<p id="hasil">0</p>
+		</div>
+		<div class="barisSatu">
+			<button id="b1-1" style="width: 138px;" onclick="bersih();">C</button>
+			<button id="b1-2" onclick="persen();">%</button>
+			<button id="b1-3" value="/" onclick="nilai('/');">/</button>
+		</div>
+		<div class="barisDua">
+			<button id="b2-1" value="7" onclick="nilai('7');">7</button>
+			<button id="b2-2" value="8" onclick="nilai('8');">8</button>
+			<button id="b2-3" value="9" onclick="nilai('9');">9</button>
+			<button id="b2-4" value="X" onclick="nilai('*');">X</button>
+		</div>
+		<div class="barisTiga">
+			<button id="b3-1" value="4" onclick="nilai('4');">4</button>
+			<button id="b3-2" value="5" onclick="nilai('5');">5</button>
+			<button id="b3-3" value="6" onclick="nilai('6');">6</button>
+			<button id="b3-4" value="-" onclick="nilai('-');">-</button>
+		</div>
+		<div class="barisEmpat">
+			<button id="b4-1" value="1" onclick="nilai('1');">1</button>
+			<button id="b4-2" value="2" onclick="nilai('2');">2</button>
+			<button id="b4-3" value="3" onclick="nilai('3');">3</button>
+			<button id="b4-4" value="+" onclick="nilai('+');">+</button>
+		</div>
+		<div class="barisLima">
+			<button id="b5-1" style="width: 138px;" value="0" onclick="nilai('0');">0</button>
+			<button id="b5-2" value="." onclick="nilai('.');">.</button>
+			<button id="b5-3" onclick="hitung();">=</button>
+		</div>
+	</div>
+	<script src="javascript.js"></script>
+</body>
+</html>
